@@ -1,0 +1,34 @@
+// ------------------------------- home  style ----------------------------------- //
+
+.app-container{
+    @apply flex relative transition-all duration-300;
+    .side-bar{
+        @apply max-sm:fixed z-10 bg-white shadow-sm w-[300px] border-e border-solid border-transparent border-e-[#eee] shadow-sm h-screen py-12 px-4 relative;
+        .nav-list{
+            @apply flex flex-col;
+            a{
+                @apply  py-4 px-4 border-b border-solid ;
+                &.active{
+                    @apply bg-gray-200 border-b-blue-300 text-blue-400 font-semibold;
+                }
+            }
+        }
+        &.hide-side{
+            @apply  w-0 p-0;
+            transition: width 0.3s ease-in-out;
+            .nav-list{
+                @apply opacity-0;
+            }
+        }
+        .toggle-btn{
+            @apply rounded-[8px] border border-solid border-[#6a6a6a] w-6 h-6 inline-flex items-center justify-center absolute top-3 -end-3 rotate-180 z-10 bg-blue-400; 
+        }
+    }
+    .app-content{
+        @apply flex-1 max-h-screen overflow-y-auto py-12 px-4 lg:px-10 ;
+        .ant-table-container{
+            @apply overflow-x-auto whitespace-nowrap;
+        } 
+    }
+}
+
