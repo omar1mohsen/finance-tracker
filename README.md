@@ -39,7 +39,7 @@ The application is built using **React** with **Redux** for state management, an
 
 3. Run the application:
    ```bash
-   npm start
+   npm run dev
    ```
 
 ## Key Libraries and Tools
