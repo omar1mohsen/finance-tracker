@@ -29,7 +29,7 @@ The application is built using **React** with **Redux** for state management, an
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/transaction-app.git
+   git clone https://github.com/omar1mohsen/finance-tracker.git
    ```
 
 2. Install the dependencies:
